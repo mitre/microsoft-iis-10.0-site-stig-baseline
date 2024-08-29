@@ -2,7 +2,7 @@ name: microsoft-iis-10.0-site-stig-baseline
 title: IIS_10-0_Site_STIG
 maintainer: The MITRE Corporation
 copyright: (c) 2024 The MITRE Corporation
-copyright_email: inspec@mitre.org
+copyright_email: saf@groups.mitre.org
 license: Apache-2.0
 summary: null
 description: 'InSpec Validation Profile for Microsoft IIS 10.0 Site STIG'
