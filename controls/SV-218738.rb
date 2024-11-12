@@ -58,7 +58,7 @@ Select "Apply" from the "Actions" pane.'
 
   if attribute('private_server')
     impact 0.0
-    desc 'The server being reviewed is a private IIS 8.5 web
+    desc 'The server being reviewed is a private IIS 10.0 web
     server, hence this control is Not Applicable.'
   end
 

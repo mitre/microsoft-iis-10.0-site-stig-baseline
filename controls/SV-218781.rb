@@ -36,6 +36,6 @@ If files with these extensions are found, this is a finding.'
   end
 
   describe 'Manual review of website is needed' do
-    skip 'Manual review that Backup interactive scripts on the IIS 8.5 server is removed'
+    skip 'Manual review that Backup interactive scripts on the IIS 10.0 server is removed'
   end
 end

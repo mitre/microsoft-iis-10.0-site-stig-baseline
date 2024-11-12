@@ -14,12 +14,12 @@ inspec_version: "~>6.0"
 
 inputs:
   - name: public_server
-    description: 'Specify if the server being reviewed is a public IIS 8.5 web server'
+    description: 'Specify if the server being reviewed is a public IIS 10.0 web server'
     type: boolean
     value: false
 
   - name: private_server
-    description: 'Specify if the server being reviewed is a private IIS 8.5 web server'
+    description: 'Specify if the server being reviewed is a private IIS 10.0 web server'
     type: boolean
     value: false
     sensitive: true
