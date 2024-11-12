@@ -13,58 +13,58 @@ depends: []
 inspec_version: "~>6.0"
 
 inputs:
+
+  # SV-218737, SV-218749
   - name: public_server
     description: 'Specify if the server being reviewed is a public IIS 10.0 web server'
     type: boolean
     value: false
 
+  # SV-218738
   - name: private_server
     description: 'Specify if the server being reviewed is a private IIS 10.0 web server'
     type: boolean
     value: false
     sensitive: true
 
-  - name: non_production_server
-    description: 'Specify if the server being reviewed is a non-production website'
-    type: boolean
-    value: false
-
+  # SV-218745
   - name: black_listed_extensions
     description: 'List of Request Filtering black listed extensions'
     type: array
     value: []
-
+  
+  # SV-218748, SV-218766
   - name: site_name
     description: 'Name of IIS site'
     type: array
     value: ['tt', 'Default']
 
+  # SV-218748, SV-218766
   - name: http_ip
     description: 'IP address used for http'
     type: array
     value: ['10.0.2.15', '0.0.0.0']
 
+  # SV-218748, SV-218766
   - name: http_hostname
     description: 'IP address used for https'
     type: array
     value: ['local', 'l']
-    
+
+  # SV-218748, SV-218766
   - name: https_ip
     description: 'IP address used for https'
     type: array
     value: ['10.0.2.15', '0.0.0.0']
 
+  # SV-218748, SV-218766
   - name: https_hostname
     description: 'Hostname used for https'
     type: array
     value: ['localhttps', 'localhttps2']
 
+  # SV-218765
   - name: log_directory
     description: 'Path of IIS log directory'
     type: string
     value: 'C:\inetpub\logs\LogFiles'
-
-  - name: site_log_directory
-    description: 'The log directory location (full path)'
-    type: array
-    values: ['C:\inetpub\logs\LogFiles1', 'aws ec2 cloudwatch url']
